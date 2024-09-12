@@ -1,9 +1,0 @@
-{
-    "builds": [
-      { "src": "invierteenterrenos/wsgi.py", "use": "@vercel/python" }
-    ],
-    "routes": [
-      { "src": "/(.*)", "dest": "invierteenterrenos/wsgi.py" }
-    ]
-  }
-  
