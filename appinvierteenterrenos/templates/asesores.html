@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}
+Nuestros Asesores
+{% endblock %}
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'css/asesores.css' %}">
+{% endblock %}
+
+{% block content %}
+
+<!-- Sección de Introducción -->
+
+<section class="hero bg-light py-5">
+    <div class="container">
+        <h1 class="text-center text-primary">Conoce a Nuestros Asesores</h1>
+        <p class="text-center lead">Nuestro equipo de expertos está aquí para guiarte en la compra del terreno ideal. Con amplia experiencia en el mercado inmobiliario, ellos te ayudarán a tomar las mejores decisiones según tus necesidades y presupuesto.</p>
+    </div>
+</section>
+
+
+{% endblock %}

@@ -1,0 +1,124 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}
+Terrenos Disponibles
+{% endblock %}
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'css/terrenos.css' %}">
+{% endblock %}
+
+{% block content%}
+
+<!-- Contenido Principal -->
+<div class="container mt-4">
+    <h1 class="text-success">Terrenos Disponibles</h1>
+    
+    <div class="row">
+        <!-- Panel de Filtros -->
+        <div class="col-md-3 mb-4">
+            <div class="card p-3">
+                <h4 class="text-primary">Filtros</h4>
+                <form>
+                    <div class="mb-3">
+                        <label for="priceRange" class="form-label">Rango de Precio</label>
+                        <input type="range" class="form-range" id="priceRange" min="0" max="1000000" step="5000">
+                        <p id="priceRangeValue" class="text-muted">$0 - $1,000,000</p>
+                    </div>
+                    <div class="mb-3">
+                        <label for="sizeRange" class="form-label">Metros Cuadrados</label>
+                        <input type="range" class="form-range" id="sizeRange" min="0" max="5000" step="10">
+                        <p id="sizeRangeValue" class="text-muted">0 m² - 5000 m²</p>
+                    </div>
+                    <div class="mb-3">
+                        <label for="location" class="form-label">Ubicación</label>
+                        <select class="form-select" id="location">
+                            <option selected>Seleccionar ubicación</option>
+                            <option value="1">Centro de la Ciudad</option>
+                            <option value="2">Suburbios</option>
+                            <option value="3">Área Rural</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Aplicar Filtros</button>
+                </form>
+            </div>
+        </div>
+        
+        <!-- Lista de Terrenos -->
+        <div class="col-md-9">
+            <div class="row">
+                <!-- Ejemplo de Terreno -->
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="{% static 'img/t-puertovaras.jpg' %}" class="card-img-top" alt="Terreno 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Terreno en la Ciudad</h5>
+                            <p class="card-text">Ubicado en el centro de la ciudad, ideal para desarrollos residenciales.</p>
+                            <p class="text-muted">$150,000 - 300 m²</p>
+                            <a href="#" class="btn btn-primary">Ver Detalles</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Repite el bloque anterior para más terrenos -->
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="{% static 'img/terreno.webp' %}" class="card-img-top" alt="Terreno 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Terreno en los Suburbios</h5>
+                            <p class="card-text">Espacioso terreno en los suburbios, perfecto para construcción.</p>
+                            <p class="text-muted">$90,000 - 500 m²</p>
+                            <a href="#" class="btn btn-primary">Ver Detalles</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="{% static 'img/t-puertovaras.jpg' %}" class="card-img-top" alt="Terreno 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Terreno en la Ciudad</h5>
+                            <p class="card-text">Ubicado en el centro de la ciudad, ideal para desarrollos residenciales.</p>
+                            <p class="text-muted">$150,000 - 300 m²</p>
+                            <a href="#" class="btn btn-primary">Ver Detalles</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="{% static 'img/t-puertovaras.jpg' %}" class="card-img-top" alt="Terreno 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Terreno en la Ciudad</h5>
+                            <p class="card-text">Ubicado en el centro de la ciudad, ideal para desarrollos residenciales.</p>
+                            <p class="text-muted">$150,000 - 300 m²</p>
+                            <a href="#" class="btn btn-primary">Ver Detalles</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="{% static 'img/t-puertovaras.jpg' %}" class="card-img-top" alt="Terreno 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Terreno en la Ciudad</h5>
+                            <p class="card-text">Ubicado en el centro de la ciudad, ideal para desarrollos residenciales.</p>
+                            <p class="text-muted">$150,000 - 300 m²</p>
+                            <a href="#" class="btn btn-primary">Ver Detalles</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="{% static 'img/t-puertovaras.jpg' %}" class="card-img-top" alt="Terreno 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Terreno en la Ciudad</h5>
+                            <p class="card-text">Ubicado en el centro de la ciudad, ideal para desarrollos residenciales.</p>
+                            <p class="text-muted">$150,000 - 300 m²</p>
+                            <a href="#" class="btn btn-primary">Ver Detalles</a>
+                        </div>
+                    </div>
+                </div>
+               
+                <!-- Agrega más terrenos aquí -->
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
