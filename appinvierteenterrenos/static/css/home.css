@@ -1,0 +1,20 @@
+.carousel-item img {
+    object-fit: cover;
+    height: 400px; /* Ajusta la altura del slider aquí */
+}
+
+.carousel-control-prev-icon::before, .carousel-control-next-icon::before {
+    font-size: 20px; /* Ajusta el tamaño del ícono de flecha */
+    color: #ffffff; /* Color del ícono */
+}
+
+.carousel-indicators button {
+    background-color: #ffffff; /* Color de fondo del indicador */
+    width: 12px; /* Tamaño del indicador */
+    height: 12px; /* Tamaño del indicador */
+    border-radius: 50%; /* Forma circular para el indicador */
+}
+
+.carousel-indicators .active {
+    background-color: #0074BD; /* Color del indicador activo */
+}
