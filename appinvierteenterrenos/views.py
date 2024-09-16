@@ -10,3 +10,5 @@ def terrenos(request):
     return render(request, 'terrenos.html')
 def asesores(request):
     return render(request, 'asesores.html')
+def contacto(request):
+    return render(request, 'contacto.html')

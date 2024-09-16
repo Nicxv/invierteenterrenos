@@ -1,0 +1,153 @@
+/* Estilos generales (para pantallas grandes) */
+.contact-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #bbffc68f;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-container h1 {
+    text-align: center;
+    color: #488b43;
+    margin-bottom: 20px;
+}
+
+.contact-info {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.contact-link {
+    color: #488b43;
+    text-decoration: none;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+}
+
+.contact-link i {
+    margin-right: 8px;
+    font-size: 18px;
+}
+
+.form-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.form-group {
+    flex: 1;
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    margin-left: 5px;
+    color: #3f3f3f;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 5px 10px; /* Aumenté el padding para mejor usabilidad */
+    border: 1px solid #3f3f3f;
+    border-radius: 50px;
+    box-sizing: border-box;
+    background-color: #ffffff;
+    transition: border-color 0.3s, box-shadow 0.3s;
+    outline: none; /* Elimina el borde por defecto del navegador */
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border: 1px solid rgb(34, 193, 34);
+    box-shadow: 0 0 5px rgba(0, 100, 0, 0.3); /* Sombra para un enfoque más suave */
+}
+
+.form-group textarea {
+    border-radius: 20px; /* Ajusta el border-radius del textarea */
+}
+
+.btn-submit {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #348b3f;
+    color: #fff;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+    text-align: center;
+    transition: background-color 0.3s;
+}
+
+.btn-submit:hover {
+    background-color: #2f6a3e; /* Color del botón al pasar el cursor */
+}
+
+/* Responsividad para pantallas más pequeñas (tabletas y móviles) */
+@media (max-width: 768px) {
+    .contact-info {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-link {
+        margin-bottom: 10px;
+        font-size: 14px;
+    }
+
+    .form-row {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .form-group {
+        margin-bottom: 20px;
+    }
+
+    .form-group input,
+    .form-group textarea {
+        border-radius: 20px;
+    }
+}
+
+/* Responsividad para pantallas muy pequeñas (móviles) */
+@media (max-width: 480px) {
+    .contact-container {
+        padding: 10px;
+    }
+
+    .contact-container h1 {
+        font-size: 24px;
+        margin-bottom: 15px;
+    }
+
+    .contact-info {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-link {
+        font-size: 14px;
+    }
+
+    .form-group input,
+    .form-group textarea {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .btn-submit {
+        font-size: 14px;
+        padding: 8px;
+    }
+}
